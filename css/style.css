@@ -1,0 +1,194 @@
+:root{
+
+    /*==================== COLOR PRIMARY ====================*/
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    /*==================== COLOR NEUTRAL ====================*/
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    
+    /*==================== TYPOGRAPHY ====================*/
+    --body: 'Montserrat', sans-serif;
+    --heading: 'Fraunces', serif;
+
+    /*==================== FONT ====================*/
+    --font-small: 14px;
+    --font-normal: 16px;
+    --font-big: 1.7rem;
+
+    /*==================== FONT WEIGHT ====================*/
+    --w-medium: 500; 
+    --w-bold: 700; 
+
+    /*==================== MARGING ====================*/
+    --m-normal: 1em;
+    --m-mediuRegular: 1.5em;
+
+    /*==================== PADDING ====================*/
+    --p-container: 80px;
+
+    /*==================== lINE HEIGHT ====================*/
+    --line-height: 1.5;
+
+}
+
+@media screen and (min-width:768px) {}
+    :root{
+        --font-big: 2rem;
+    }
+
+/*==================== STYLE GENERAL ====================*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3{
+    margin:0;
+}
+
+body{
+    font-family: var(--body);
+    font-size: var(--font-normal);
+    line-height: var(--line-height);
+    background-color: var(--cream);
+}
+
+.flex{
+    display: flex;
+    gap: 1rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1rem;
+}
+
+/*==================== CARD ====================*/
+.card{
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100vh;
+    min-height: 760px;
+    gap:0;
+    align-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    animation: fade 0.8s 0.6s both ease-in;
+    -webkit-animation: fade 0.8s 0.6s both ease-in;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.card__bg{
+    min-height: 250px;
+    background-image: url("/images/image-product-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+}
+
+.card__texts{
+    background-color: var(--white);
+    padding: 1.5em 2em;
+    border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -ms-border-radius: 0 0 10px 10px;
+    -o-border-radius: 0 0 10px 10px;
+}
+
+.card__product{
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: var(--dark-grayish-blue);
+}
+
+.card__title{
+    font-family: var(--heading);
+    font-size: var(--font-big);
+    font-weight: var(--w-bold);
+    color: var(--very-dark-blue);
+    line-height: 1.2;
+    margin: 0.8rem 0 1.2rem;
+}
+
+.card__paragraph{
+    font-size: var(--font-small);
+    margin-bottom: 1.8em;
+    color: var(--dark-grayish-blue);
+}
+
+.card__price{
+    font-size: var(--font-big);
+    color: var(--dark-cyan);
+    font-family: var(--heading);
+    letter-spacing: 2px;
+
+    align-items: center;
+}
+
+.card__sold{
+    color: var(--dark-grayish-blue);
+    font-size: initial;
+    font-family: var(--body);
+    text-decoration: line-through;
+}
+
+.card__cta{
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    justify-content: center;
+
+    margin-top: 1.5em;
+    padding: 1em 0;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    background-color: var(--dark-cyan);
+}
+
+.card__cta::before{
+    content: url("/images/icon-cart.svg")
+}
+
+@media screen and (min-width:667px) {
+    /*==================== CARD ====================*/
+    .card__bg{
+        border-radius: 10px 0 0 10px;
+        -webkit-border-radius: 10px 0 0 10px;
+        -moz-border-radius: 10px 0 0 10px;
+        -ms-border-radius: 10px 0 0 10px;
+        -o-border-radius: 10px 0 0 10px;
+    }
+
+    .card__texts{
+        border-radius: 0 10px 10px 0;
+        -webkit-border-radius: 0 10px 10px 0;
+        -moz-border-radius: 0 10px 10px 0;
+        -ms-border-radius: 0 10px 10px 0;
+        -o-border-radius: 0 10px 10px 0;
+}
+    
+}
+
+@media screen and (min-width:1440px) {
+    
+}
