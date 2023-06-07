@@ -21,7 +21,7 @@ Esto es una solución de la [Product preview card component challenge on Fronten
 
 ### Screenshot
 
-![]()
+![](https://github.com/GarciaRojasP/product-preview-card/assets/119550417/48cb8e03-be47-4387-9eed-54b5f7c88653)
 
 ### Links
 
