@@ -25,8 +25,8 @@ Esto es una solución de la [Product preview card component challenge on Fronten
 
 ### Links
 
-- Ver código: [Product preview card]()
-- Ver demo: [Product preview card]()
+- Ver código: [Product preview card](https://github.com/GarciaRojasP/product-preview-card)
+- Ver demo: [Product preview card](https://product-preview-card-tawny-five.vercel.app/)
 
 ## Mi proceso
 
